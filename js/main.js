@@ -30,4 +30,3 @@ function login() {
         }
     }
 }
-// alert ("Lo siento, debes registrarte para iniciar sesión")
