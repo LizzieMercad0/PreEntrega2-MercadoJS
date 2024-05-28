@@ -22,8 +22,6 @@ function login() {
             if (pass != "1234") {
                 alert("Contraseña incorrecta. Te quedan " + intentosRestantes + " intentos.");
             }
-                document.getElementById("usuario").reset ();
-                document.getElementById("contraseña").reset ();
         } else {
             alert("¡Lo siento! Has agotado tus intentos. Inténtalo de nuevo más tarde.");
             // Bloquear el formulario o redirigir a otra página (opcional)
