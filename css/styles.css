@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Config.navbar*/
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+.lista, #menu{
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding: 20px 30px;
+}
+/**/
+
+/* LOGIN */
+.formulario{
+    width: 550px;
+    transform: translate(450px);
+}
+.formulario h1, p{
+    text-align: center;
+
+}
+
+input{
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    border-color: #618837;
+    margin: 5px;
+}
+/**/
+.formulario form{
+    padding: 0 40px;
+    border-bottom: 2px solid #618837     ;
+    ;
+}
+
+
+
+/* PAGINA INICIO  */
+#inicio{
+    height: 500px;
+    font-family:"DM Sans", sans-serif;
+    font-style:normal;
+    font-weight: 100;
+    font-size: 30px;
+    padding: 20px 20px 20px 50px;
+    background-image: url(../assets/image/inicio.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.texto{
+    width: 800px;
+}
+
+#registrarse{
+    transform: translate(50px,-300px);
+}
+
+/*Conf.boton registrarse + subcribirse*/
+#registrarse, #subcribirse{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #618837     ;
+}
+/**/
+
+
+/*Conf.tex.categoria y producto*/
+
+#centro2{
+    text-align: center;
+    padding: 40px;
+    transform: translate(-20px,-100px);
+}
+/**/
+
+
+/*Conf. Vista productos*/
+#productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: translate(-10px,-90px);
+    text-align: center;
+
+
+}
+.card{
+    margin: 5px;
+    border: 1px solid #ccc;
+    color: #143109;
+    padding: 10px 10px 10px 10px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.comprarahora{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #668f3d  ;
+}
+/**/
+
+/*Barra extra*/
+
+#extra{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.ly{
+    list-style: none;
+    transform: translate(4px,-100px);
+}
+#x{
+    transform: translate(0px,100px);
+}
+.image{
+    margin: 20px;
+    height: 50px;
+    transform: translate(15px,-100px);
+}
+
+/*NewsLetter*/
+#centro3{
+    text-align: center;
+    width: 500px;
+    transform: translate(440px,-50px);
+}
+
+/*Ultimos detalles footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Conf. Fonts web*/
+a, h1, p, h2, button, input,label,h5, td {
+    font-family:"DM Sans", sans-serif;
+    font-style:normal;
+    padding: 2px;
+}
+th{
+    font-family:"DM Sans", sans-serif;
+    font-style:normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+tr{
+    text-align: left;
+    font-size: 16px;
+}
+
+
+h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+}

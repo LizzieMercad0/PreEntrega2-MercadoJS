@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inicia Sesion</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html">
+                <img src="../assets/image/namefavicon.ico" alt="Logo Brotecitos" width="100" height="100">
+            </a>
+            <ul id="menu">
+                <li class="lista">
+                    <a href="../index.html"> Inicio</a>
+                </li>
+        </nav>
+    </header>
+    <!-- <main>
+        <h1>Inicia Sesión</h1>
+        <p>Y disfruta de todas las ventajas de ser miembro de Brotecitos.</p>
+    </main> -->
+    <!--Formulario-->
+    <div class="formulario">
+        <h1>¡Bienvenida de nuevo!</h1>
+        <p>Conoce lo que tenemos para ofrecerte hoy</p>
+        <form action="./procesar.php" method="post" enctype="application/x-www-form-urlencoded">
+            <div id="username">
+                <label for=""> Usuario</label>
+                <input type="text" name="usuario" id="usuario" placeholder="Ingrese su usuario" autocomplete="off" required>
+            </div>
+            <div id="contrasena">
+                <label for="password">Contraseña</label>
+                <input type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña" required>
+            </div>
+            <div class="recordar">
+                <h5>Olvide mi contraseña</h5>
+            </div>
+            <input type="button" value="Iniciar Sesión" id="boton" onclick="login()">
+            <div class="Registrarse">
+                <p>¿No tienes cuenta aún? <a href="./createaccount.html">Registrate</a></p>
+            </div>
+        </form>
+    </div>
+        
+        
+    <!--Pie de pagina-->
+    <footer class="footer">
+        <nav>
+            <h3>Brotecitos</h3>
+            <table>
+                <!--Encabezado-->
+                <tr>
+                    <th >Contactos</th>
+                    <th>Productos</th>
+                    <th id="acercade"> Acerca de</th>
+                    <th>Soporte</th>
+                </tr>
+                <!--Row 1-->
+                <tr>
+                    <td>abcdefgh@gmail.com</td>
+                    <td>Suculentas</td>
+                    <td>Informacion de la empresa</td>
+                    <td>Cambio y/o devoluciones</td>
+                </tr>
+                <!--Row 2-->
+                <tr>
+                    <td>+1-2345-6789</td>
+                    <td>Monsteras</td>
+                </tr>
+                <!--Row 3-->
+                <tr>
+                    <td>123 Ave, Córdoba, Argentina</td>
+                    <td>Pothus</td>
+                </tr>
+                <!--Row 4-->
+                <tr>
+                    <td class="redes">
+                        <img src="../assets/image/instagram.png" alt="instagram">
+                        <img src="../assets/image/facebook.png" alt=" facebook"> 
+                        <img src="../assets/image/x.png" alt="Twitter">
+                    </td>
+                    <td>Rosario</td>
+                </tr>
+                <!--Row 5-->
+                <tr>
+                    <td></td>
+                    <td>Cactus</td>
+                </tr>
+            </table>
+        </nav>
+        </footer>
+</body>
+<script src="../js/main.js"></script>
+</html>
