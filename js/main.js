@@ -17,20 +17,19 @@ function login() {
 
         if (intentosRestantes > 0) {
             if (user != "Mercado") {
-            alert("Usuario incorrecto. Te quedan " + intentosRestantes + " intentos.");
-            } 
-            if (pass != "1234") {
-            alert("Contraseña incorrecta. Te quedan " + intentosRestantes + " intentos.");
+                alert("Usuario incorrecto. Te quedan " + intentosRestantes + " intentos.");
             }
+            if (pass != "1234") {
+                alert("Contraseña incorrecta. Te quedan " + intentosRestantes + " intentos.");
+            }
+                document.getElementById("usuario").value = " ";
+                document.getElementById("contraseña").value = " ";
         } else {
             alert("¡Lo siento! Has agotado tus intentos. Inténtalo de nuevo más tarde.");
             // Bloquear el formulario o redirigir a otra página (opcional)
         }
-        intentosRestantes--;
-        user = document.getElementById("usuario").value = "";
-        pass = document.getElementById("contraseña").value = "";
+        intentosRestantes--
+        }
     }
-    
-}
 }
 // alert ("Lo siento, debes registrarte para iniciar sesión")
