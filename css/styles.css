@@ -22,7 +22,7 @@ body{
     width: 550px;
     transform: translate(450px);
 }
-.formulario h1, p{
+.formulario h2, p{
     text-align: center;
 
 }
@@ -35,7 +35,7 @@ input{
     margin: 5px;
 }
 /**/
-.formulario form{
+.formulario, form{
     padding: 0 40px;
     border-bottom: 2px solid #618837     ;
     ;
@@ -60,12 +60,12 @@ input{
     width: 800px;
 }
 
-#registrarse{
+#login{
     transform: translate(50px,-300px);
 }
 
 /*Conf.boton registrarse + subcribirse*/
-#registrarse, #subcribirse{
+#login, #subcribirse{
     width: 150px;
     height: 30px;
     border-radius: 10px;

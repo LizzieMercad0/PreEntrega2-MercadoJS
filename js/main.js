@@ -1,32 +1,26 @@
-function login() {
-    let user, pass;
-    let intentosRestantes = 3;
+const boton = document.getElementById("login");
+boton.addEventListener("click", mostrarPrompt);
 
-    for (let i = 0; i < 3; i++) {
-    user = document.getElementById("usuario").value;
-    pass = document.getElementById("contraseña").value;
+const credentials = [
+    { usuario: "Mercado", contrasena: "1234" },
+];
 
+function mostrarPrompt() {
+    const usuario = prompt("Ingrese su usuario:");
+    const contrasena = prompt("Ingrese su contraseña:");
 
-    if (user == "Mercado" && pass == "1234") {
-      // Credenciales correctas
-        alert("¡Hola " + user + "! Bienvenida");
-        alert("¡Felicitaciones, te has ganado un cupón de descuento!");
-        window.location = "../index.html";
-        break
+    let usuarioEncontrado = null;
+
+    for (const user of credentials) {
+        if (user.usuario === usuario && user.contrasena === contrasena) {
+        usuarioEncontrado = user;
+        break;
+        }
+    }
+
+    if (usuarioEncontrado) {
+        alert(`¡Hola ${usuarioEncontrado.usuario}! Bienvenido, disfruta de tu estadía aquí.`);
     } else {
-
-        if (intentosRestantes > 0) {
-            if (user != "Mercado") {
-                alert("Usuario incorrecto. Te quedan " + intentosRestantes + " intentos.");
-            }
-            if (pass != "1234") {
-                alert("Contraseña incorrecta. Te quedan " + intentosRestantes + " intentos.");
-            }
-        } else {
-            alert("¡Lo siento! Has agotado tus intentos. Inténtalo de nuevo más tarde.");
-            // Bloquear el formulario o redirigir a otra página (opcional)
-        }
-        intentosRestantes--
-        }
+        alert("No estas registrado en esta web");
     }
 }
