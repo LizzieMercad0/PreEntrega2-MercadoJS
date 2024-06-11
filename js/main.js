@@ -21,6 +21,6 @@ function mostrarPrompt() {
     if (usuarioEncontrado) {
         alert(`¡Hola ${usuarioEncontrado.usuario}! Bienvenido, disfruta de tu estadía aquí.`);
     } else {
-        alert("No estas registrado en esta web");
+        alert("No estas registrado en esta web, por favor habla con el administrador");
     }
 }
